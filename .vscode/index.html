@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>DevLinks</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="profile">
+        <img src="./assets/avatar-dark.png" alt="foto de perfil" />
+        <p>@Sérgio Rebelo</p>
+        <div id="switch" onclick="toggleMode()">
+          <button></button>
+          <span></span>
+        </div>
+        <ul>
+          <li>
+            <a href="https://weather-app-pied-ten-12.vercel.app/" target="_blank">Weather App</a>
+          </li>
+          <li>
+            <a href="https://unit-converter-roan.vercel.app/" target="_blank">Unit Converter</a>
+          </li>
+          <li>
+            <a href="https://task-list-three-kappa.vercel.app/" target="_blank">Task List</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Conheça o explorer</a>
+            <!--"target="_blank"" É USADO PARA ABRIR UMA NOVA ABA AO CLICAR NO LINK -->
+          </li>
+        </ul>
+      </div>
+      <div id="social-links">
+        <a href="https://github.com/SMRebelo" target="_blank">
+        <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="https://instagram.com/rebelo925?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
+        <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="https://linkedin.com/in/sergio-rebelo" target="_blank">
+        <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
+      <footer>
+        <a href="tel:+351913353114">Tel: +351 913353114</a>
+        <a href="mailto:sergio_rebelo@hotmail.com" target="_blank">sergio_rebelo@hotmail.com</a>
+      </footer>
+    </div>
+
+
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
