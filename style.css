@@ -76,10 +76,11 @@ body * {
   left: 0;
   z-index: 1; /*faz sobrepor elementos uns por cima dos outros*/
   transform: translateY(-50%);
+
+  animation: slide-back 0.4s forwards;
 }
 .light #switch button{
-  right: 0;
-  left: initial;
+  animation: slide-in 0.4s forwards;
 }
 #switch span{
   display: block;
@@ -90,6 +91,9 @@ body * {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 9999px;
+}
+#switch button:hover{
+  outline: 8px solid var(--highlight-color);
 }
 
 /* Links */
@@ -154,5 +158,24 @@ footer a {
   }
   .light{
     --bg-url: url(./assets/bg-dsktop-light.jpg);
+  }
+}
+
+/* ANIMATIONS*/
+
+@keyframes slide-in{
+  from{
+    left: 0;
+  }
+  to{
+    left:50%;
+  }
+}
+@keyframes slide-back{
+  from{
+    left: 50%;
+  }
+  to{
+    left:0;
   }
 }
