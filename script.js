@@ -15,6 +15,6 @@ function toggleMode(){
     img.setAttribute("alt", "Foto de perfil durante o Surf")
   }
 
-  
+  strLower = stg.toLowercase 
 
 }
