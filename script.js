@@ -7,7 +7,7 @@ function toggleMode(){
   // substituir imagem
   if (html.classList.contains("light")) {
     //se tiver light mode adicionar imagem light
-    img.setAttribute('src', './assets/avatar-light.svg');// ajustar , modificar um atributo!
+    img.setAttribute('src', './assets/avatar_profile.svg');// ajustar , modificar um atributo!
     img.setAttribute('alt', 'Foto de perfil durante o dia')
   } else {
     //se tiver dark mode adicionar imagem normal
